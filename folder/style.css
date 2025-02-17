@@ -17,8 +17,6 @@ section > * {
     opacity: 0;
     animation: fadeIn 1s ease-out forwards;
 }
-
-
 .nav-item:nth-child(1) .nav-link { animation-delay: 0.2s; }
 .nav-item:nth-child(2) .nav-link { animation-delay: 0.4s; }
 .nav-item:nth-child(3) .nav-link { animation-delay: 0.6s; }
@@ -43,3 +41,59 @@ section {
 
 .schedule-table { background-color: #f8f9fa; }
 .map-container { height: 300px; }
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.teacher-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.teacher-card:hover {
+    transform: scale(1.05);
+}
+
+.teacher-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.teacher-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+}
+
+.teacher-card p {
+    padding: 0 15px 15px;
+    color: #555;
+}
+
+.test-question {
+    margin-bottom: 20px;
+}
+
+.test-question label {
+    display: block;
+    margin: 5px 0;
+}
+
+.test-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+#main{
+    background-image: url(img/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main_text{
+
+}
