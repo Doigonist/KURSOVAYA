@@ -91,8 +91,47 @@ section {
     font-weight: bold;
     color: #ff6b6b;
 }
-#main{
-    background-image: url(img/img2.jpg);
+#main {
+    /* background: url('img/bg.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #555;
+}
+
+.main-text {
+    padding-right: 50px;
+}
+
+.promo-card {
+    background: #ff6b6b;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.promo-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.promo-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.promo-card .btn {
+    background: white;
+    color: #ff6b6b;
+    border: none;
+    font-weight: bold;
+}
+
+.promo-card .btn:hover {
+    background: #ff6b6b;
+    color: white;
+}
+#promo-date > td{
+    background-color: rgb(176, 5, 5);
 }

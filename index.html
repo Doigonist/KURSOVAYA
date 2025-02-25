@@ -27,12 +27,32 @@
         </div>
     </nav>
 
-    <section id="main" class="bg-light">
-            <div class="container text-center py-5 text-light" id="main_text">
-                <h1 class="display-4 mb-4">Научись танцевать вместе с нами!</h1>
-                <p class="lead mb-4">Первое пробное занятие бесплатно</p>
-                <button class="btn btn-danger btn-lg">Записаться сейчас</button>
+    <section id="main">
+        <div class="container" id="main_con">
+            <div class="row align-items-center">
+                <div class="col-md-6 main-text text-light">
+                    <h1 class="display-4 mb-4">Научись танцевать вместе с нами!</h1>
+                    <p class="lead mb-4">Первое пробное занятие бесплатно</p>
+                    <button class="btn btn-danger btn-lg">Записаться сейчас</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="promo-card">
+                        <h3>Специальная акция!</h3>
+                        <img src="img/dancer.jpg" alt="" width="350" height="500">
+                        <p>
+                            У нас в гостях популярный хип-хоп танцор <strong>Иван "Storm" Петров</strong>, 
+                            победитель международных турниров! Не упустите шанс посетить его мастер-класс.
+                        </p>
+                        <p>
+                            <strong>Дата:</strong> 25 октября 2025<br>
+                            <strong>Время:</strong> 18:00<br>
+                            <strong>Место:</strong> Зал №1
+                        </p>
+                        <button class="btn btn-lg">Записаться на мастер-класс</button>
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
      <section id="about">
         <div class="container">
@@ -61,10 +81,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr id="promo-date">
                         <td>Понедельник</td>
                         <td>18:00-20:00</td>
-                        <td>Хип-Хоп</td>
+                        <td>Мастер класс по хип-хопу от Ивана!</td>
                     </tr>
                     <tr>
                         <td>Среда</td>
