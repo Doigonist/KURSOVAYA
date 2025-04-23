@@ -23,6 +23,7 @@ section > * {
 .nav-item:nth-child(4) .nav-link { animation-delay: 0.8s; }
 .nav-item:nth-child(5) .nav-link { animation-delay: 1s; }
 .nav-item:nth-child(6) .nav-link { animation-delay: 1.2s; }
+.nav-item:nth-child(7) .nav-link { animation-delay: 1.4s; }
 
 .navbar { 
     background: rgba(0,0,0,0.9) !important;
@@ -39,57 +40,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-}
-
-.schedule-table { background-color: #f8f9fa; }
-.map-container { height: 300px; }
-
-.teachers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.teacher-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.teacher-card:hover {
-    transform: scale(1.05);
-}
-
-.teacher-card img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.teacher-card h3 {
-    margin: 15px 0 10px;
-    font-size: 1.5rem;
-}
-
-.teacher-card p {
-    padding: 0 15px 15px;
-    color: #555;
-}
-
-.test-question {
-    margin-bottom: 20px;
-}
-
-.test-question label {
-    display: block;
-    margin: 5px 0;
-}
-
-.test-result {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ff6b6b;
+    border-bottom: 1px solid white;
 }
 #main {
     background: url('img/bg.jpg');
@@ -97,37 +48,18 @@ section {
     background-size: cover;
     background-color: #555;
 }
-#main_con{
-    background-color: #555;
+.teacher-card {
+    transition: transform 0.3s ease;
 }
-
-.main-text {
-    padding-right: 50px;
+.teacher-card:hover {
+    transform: scale(1.05);
 }
-
-.promo-card {
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
     color: white;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
+    transition: color 0.3s ease;
 }
-
-.promo-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.promo-card p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-/* .promo-card .btn {
-    background: white;
+.social-icon:hover {
     color: #ff6b6b;
-    border: none;
-    font-weight: bold;
-} */
-#promo-date > td{
-    background-color: rgb(176, 5, 5);
 }

@@ -3,178 +3,518 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dance Club | Танцевальный клуб</title>
+    <title>Hip-Hop Dance Club</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#" style="animation: slideDown 0.5s ease-out;">Dance Club</a>
+            <a class="navbar-brand" href="#">Hip-Hop Club</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#main">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#promo">Акция</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О клубе</a></li>
                     <li class="nav-item"><a class="nav-link" href="#schedule">Расписание</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#teachers">Учителя</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
                     <li class="nav-item"><a class="nav-link" href="#test">Тест</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <!--БАННЕР-->
     <section id="main">
-        <div class="container" id="main_con">
-            <div class="row align-items-center">
-                <div class="col-md-6 main-text text-light">
-                    <h1 class="display-4 mb-4">Научись танцевать вместе с нами!</h1>
+        <div class="container" id="">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 main-text text-light d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="display-4 mb-4">Научись танцевать<br>вместе с нами!</h1>
                     <p class="lead mb-4">Первое пробное занятие бесплатно</p>
                     <button class="btn btn-danger btn-lg">Записаться сейчас</button>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="promo" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="img/dancer.jpg" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="display-5 mb-3">Мастер-класс от чемпиона!</h2>
+                    <h3>Иван "Storm" Петров</h3>
+                    <p class="fs-5">Возраст: 28 лет</p>
+                    <p>Победитель World Hip-Hop Championship 2023, 3-кратный чемпион России, основатель собственного стиля "Urban Storm".</p>
+                    <p>25 октября проведет эксклюзивный мастер-класс только для участников нашего клуба.</p>
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#signupModal">Записаться на мастер-класс</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--О КЛУБЕ-->
+    <section id="about" class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-light">
+                    <h2 class="mb-4">О нашем клубе</h2>
+                    <p>Мы - крупнейший Hip-Hop клуб в России с 10-летней историей. Наши тренеры - действующие чемпионы международных соревнований.</p>
+                    <p>Три современных зала, профессиональное оборудование и индивидуальный подход к каждому ученику.</p>
+                </div>
                 <div class="col-md-6">
-                    <div class="promo-card">
-                        <h3>Специальная акция!</h3>
-                        <p>
-                            У нас в гостях популярный хип-хоп танцор <strong>Иван "Storm" Петров</strong>, 
-                            победитель международных турниров! Не упустите шанс посетить его мастер-класс.
-                        </p>
-                        <p>
-                            <strong>Дата:</strong> 25 октября 2025<br>
-                            <strong>Время:</strong> 18:00<br>
-                            <strong>Место:</strong> Зал №1
-                        </p>
-                        <button class="btn btn-danger btn-lg">Записаться на мастер-класс</button>
+                    <div id="clubCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="img/img1.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hip.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/img3.jpg" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#clubCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#clubCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <section id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="mb-4">Наш клуб</h2>
-                    <p>Мы обучаем современным танцевальным направлениям уже более 5 лет. Наши преподаватели - профессиональные танцоры с многолетним опытом.</p>
-                    <p>Занятия проходят в современных залах с профессиональным оборудованием. Группы для любого уровня подготовки.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/img1.jpg" class="img-fluid rounded" alt="Танцы">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="schedule" class="schedule-table">
-        <div class="container">
+    <!--РАСПИСАНИЕ ЗАНЯТИЙ-->
+    <section id="schedule" class="py-5 bg-dark">
+        <div class="container text-light">
             <h2 class="text-center mb-5">Расписание занятий</h2>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>День</th>
-                        <th>Время</th>
-                        <th>Направление</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="promo-date">
-                        <td>Понедельник</td>
-                        <td>18:00-20:00</td>
-                        <td>Мастер класс по хип-хопу от Ивана!</td>
-                    </tr>
-                    <tr>
-                        <td>Среда</td>
-                        <td>19:00-21:00</td>
-                        <td>Латина</td>
-                    </tr>
-                    <tr>
-                        <td>Пятница</td>
-                        <td>17:00-19:00</td>
-                        <td>Бальные танцы</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section id="teachers">
-        <div class="container">
-            <h2 class="text-center mb-5">Наши учителя</h2>
-            <div class="teachers-grid">
-                <div class="teacher-card">
-                    <img src="img/temp.jpg" alt="Учитель 1">
-                    <h3 class="text-center">Анна Иванова</h3>
-                    <p class="text-center">Специализация: Латина, Сальса</p>
+            <div class="row row-cols-1 row-cols-md-7 g-4">
+                <div class="col text-center fw-bold">Пн</div>
+                <div class="col">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">18:00-20:00</h5>
+                            <p class="card-text">Hip-Hop для начинающих</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="teacher-card">
-                    <img src="img/temp.jpg" alt="Учитель 2">
-                    <h3 class="text-center">Игорь Петров</h3>
-                    <p class="text-center">Специализация: Хип-Хоп, Брейк-данс</p>
+                <div class="col text-center fw-bold">Вт</div>
+                <div class="col">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">18:00-20:00</h5>
+                            <p class="card-text">Hip-Hop для начинающих</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="teacher-card">
-                    <img src="img/temp.jpg" alt="Учитель 3">
-                    <h3 class="text-center">Елена Смирнова</h3>
-                    <p class="text-center">Специализация: Бальные танцы</p>
+                <div class="col text-center fw-bold">Ср</div>
+                <div class="col">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">18:00-20:00</h5>
+                            <p class="card-text">Hip-Hop для начинающих</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center fw-bold">Чт</div>
+                <div class="col">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">19:00-21:00</h5>
+                            <p class="card-text">Продвинутый Hip-Hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center fw-bold">Пт</div>
+                <div class="col">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">19:00-21:00</h5>
+                            <p class="card-text">Продвинутый Hip-Hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center fw-bold">Сб</div>
+                <div class="col">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">19:00-21:00</h5>
+                            <p class="card-text">Продвинутый Hip-Hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center fw-bold">Вс</div>
+                <div class="col">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">19:00-21:00</h5>
+                            <p class="card-text">Продвинутый Hip-Hop</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="test">
-        <div class="container">
-            <h2 class="text-center mb-5">Тест для выбора учителя</h2>
-            <form id="teacherTest">
-                <div class="test-question">
-                    <p>1. Какой стиль танцев вам ближе?</p>
-                    <label><input type="radio" name="q1" value="latina"> Латина</label>
-                    <label><input type="radio" name="q1" value="hiphop"> Хип-Хоп</label>
-                    <label><input type="radio" name="q1" value="ballroom"> Бальные танцы</label>
+    <!--ПРЕПОДАВАТЕЛИ-->
+    <section class="py-5 bg-dark">
+        <div class="container text-light">
+            <h2 class="text-center mb-5">Наши преподаватели</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card teacher-card h-100" data-bs-toggle="modal" data-bs-target="#teacher1Modal">
+                        <img src="img/dancer.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Иван Петров</h5>
+                            <p class="card-text">Возраст: 28 лет</p>
+                            <p class="card-text">Специализация: Хип-Хоп, Брейк-данс</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="test-question">
-                    <p>2. Какой уровень подготовки у вас?</p>
-                    <label><input type="radio" name="q2" value="beginner"> Начинающий</label>
-                    <label><input type="radio" name="q2" value="intermediate"> Средний</label>
-                    <label><input type="radio" name="q2" value="advanced"> Продвинутый</label>
+                <div class="col">
+                    <div class="card teacher-card h-100" data-bs-toggle="modal" data-bs-target="#teacher2Modal">
+                        <img src="img/human2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Анна Смирнова</h5>
+                            <p class="card-text">Возраст: 25 лет</p>
+                            <p class="card-text">Специализация: Джаз-Фанк, Вог</p>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="showResult()">Узнать результат</button>
-            </form>
-            <div id="testResult" class="test-result text-center mt-4"></div>
+                
+                <div class="col">
+                    <div class="card teacher-card h-100" data-bs-toggle="modal" data-bs-target="#teacher3Modal">
+                        <img src="img/human10.avif" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Дмитрий Иванов</h5>
+                            <p class="card-text">Возраст: 30 лет</p>
+                            <p class="card-text">Специализация: Крамп, Хаус</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="contact">
+    <div class="modal fade" id="teacher1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Иван Петров</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/dancer.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <p><b>Возраст:</b> 28 лет</p>
+                            <p><b>Специализация:</b> Хип-Хоп, Брейк-данс</p>
+                            <p><b>Опыт преподавания:</b> 5 лет</p>
+                            <hr>
+                            <h5>Биография:</h5>
+                            <p>Иван начал танцевать в 15 лет. Чемпион России по хип-хопу (2018, 2020), финалист мирового чемпионата Hip-Hop International (2019). Специализируется на old-school хип-хопе и брейк-дансе. В преподавании делает акцент на музыкальности и индивидуальном стиле.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="teacher2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Анна Смирнова</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/human2.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <p><b>Возраст:</b> 25 лет</p>
+                            <p><b>Специализация:</b> Джаз-Фанк, Вог</p>
+                            <p><b>Опыт преподавания:</b> 3 года</p>
+                            <hr>
+                            <h5>Биография:</h5>
+                            <p>Анна - участница многочисленных танцевальных шоу и конкурсов. Финалистка World of Dance Moscow (2021). Специализируется на современных направлениях: джаз-фанк и вог. В обучении уделяет особое внимание пластике и выразительности движений.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="teacher3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Дмитрий Иванов</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/human10.avif" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <p><b>Возраст:</b> 30 лет</p>
+                            <p><b>Специализация:</b> Крамп, Хаус</p>
+                            <p><b>Опыт преподавания:</b> 7 лет</p>
+                            <hr>
+                            <h5>Биография:</h5>
+                            <p>Дмитрий - основатель команды Street Warriors, победитель Battle of the Year Russia (2017). Эксперт в энергичных стилях - крамп и хаус. В преподавании сочетает техническую базу с развитием физической силы и выносливости.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ОТЗЫВЫ-->
+    <section id="reviews" class="py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Отзывы наших учеников</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Анна, 24 года</h5>
+                            <p class="card-text">"За 3 месяца научилась танцевать лучше, чем за 2 года в другой школе!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Михаил, 19 лет</h5>
+                            <p class="card-text">"Отличные тренеры, понятно объясняют даже сложные элементы."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Елена, 32 года</h5>
+                            <p class="card-text">"Никогда не думала, что в моем возрасте смогу так двигаться!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Денис, 27 лет</h5>
+                            <p class="card-text">"Лучший клуб в городе, хожу уже 2 года и не планирую останавливаться."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Ольга, 22 года</h5>
+                            <p class="card-text">"Атмосфера просто супер, все друг друга поддерживают."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Артем, 25 лет</h5>
+                            <p class="card-text">"После работы - только сюда! Снимает весь стресс."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ТЕСТ-->
+    <section class="py-5 bg-dark text-light" id="test">
+        <div class="container test-container">
+            <h2 class="text-center mb-4">Какой Hip-Hop стиль вам подходит?</h2>
+            <form id="danceTestForm">
+                <div class="test-question">
+                    <p class="fw-bold mb-3">1. Какой темп вам нравится?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tempo" id="tempoFast" value="fast" required>
+                        <label class="form-check-label" for="tempoFast">Быстрый и энергичный</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tempo" id="tempoSlow" value="slow">
+                        <label class="form-check-label" for="tempoSlow">Медленный и плавный</label>
+                    </div>
+                </div>
+                <div class="test-question">
+                    <p class="fw-bold mb-3">2. Что вам ближе?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="style" id="stylePrecise" value="precise" required>
+                        <label class="form-check-label" for="stylePrecise">Четкие движения</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="style" id="styleFree" value="free">
+                        <label class="form-check-label" for="styleFree">Свободный стиль</label>
+                    </div>
+                </div>
+                <div class="test-question">
+                    <p class="fw-bold mb-3">3. Где бы вы хотели танцевать?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="place" id="placeStreet" value="street" required>
+                        <label class="form-check-label" for="placeStreet">На улице/баттлах</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="place" id="placeStudio" value="studio">
+                        <label class="form-check-label" for="placeStudio">В студии/на сцене</label>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-danger btn-lg">Узнать результат</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="contact" class="py-5 bg-dark text-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="mb-4">Контакты</h2>
-                    <p>Адрес: г. Москва, ул. Танцевальная, 12</p>
-                    <p>Телефон: +7 (999) 123-45-67</p>
-                    <p>Email: dance@club.ru</p>
+                    <p><b>Адрес:</b> г. Москва, ул. Танцевальная, 12</p>
+                    <p><b>Телефон:</b> +7 (999) 123-45-67</p>
+                    <p><b>Email:</b> hiphop@club.ru</p>
                 </div>
                 <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Имя">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Остались вопросы?</h5>
+                            <form id="FormBtn">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
+                                </div>
+                                <button class="btn btn-primary">Отправить</button>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
-                        </div>
-                        <button class="btn btn-primary">Отправить</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>2024 Dance Club. Все права защищены</p>
+        <div class="container text-center d-flex justify-content-center align-items-center">
+            <p>&copy; 2024 Hip-Hop Dance Club</p>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="social-icon"><i class="bi bi-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            </div>
         </div>
     </footer>
 
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Запись на мастер-класс</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="FormBtn">
+                        <div class="mb-3">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Телефон</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="formToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <b class="me-auto">Успешно!</b>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Ваша форма успешно отправлена!
+            </div>
+        </div>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="testToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <b class="me-auto">Отлично! Вам подходит...</b>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toastMessage">
+                
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('FormBtn').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let toast = new bootstrap.Toast(document.getElementById('formToast'));
+            toast.show();
+        });
+        document.getElementById('danceTestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let tempo = document.querySelector('input[name="tempo"]:checked').value;
+            let style = document.querySelector('input[name="style"]:checked').value;
+            let place = document.querySelector('input[name="place"]:checked').value;
+            let result;
+            if (tempo === 'fast' && style === 'precise' && place === 'street') {
+                result = "Вам подходит <strong>Брейк-данс</strong>! Это энергичный стиль с акробатическими элементами.";
+            } 
+            else if (tempo === 'fast' && style === 'free' && place === 'street') {
+                result = "Вам идеально подходит <strong>Крамп</strong> - агрессивный и экспрессивный уличный стиль.";
+            }
+            else if (tempo === 'slow' && style === 'free') {
+                result = "Рекомендуем <strong>Хаус</strong> - плавные движения под электронную музыку.";
+            }
+            else if (style === 'precise' && place === 'studio') {
+                result = "Попробуйте <strong>Джаз-Фанк</strong> - четкие движения с элементами джаза.";
+            }
+            else {
+                result = "Вам подойдет <strong>Хип-Хоп</strong> - универсальный стиль, сочетающий разные элементы!";
+            }
+            
+            document.getElementById('toastMessage').innerHTML = result;
+            const toast = new bootstrap.Toast(document.getElementById('testToast'));
+            toast.show();
+        });
+    </script>
 </body>
 </html>
